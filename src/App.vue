@@ -20,7 +20,7 @@ import LogoReel from './components/logoReel.vue'
 <div class="text-center flex flex-col gap-8 pt-8 pb-16 bg-pink-200">
   <div>
     <h1 class="font-light text-3xl">Neues Denken.<br>Neue Kompetenzen.</h1>
-    <p class="text-base">Medienhaus & KI-zentrierte Agentur </p>
+    <p class="text-base">Medienhaus & KI-zentrierte Agentur test </p>
   </div>
   <div class="flex flex-wrap justify-center	gap-3">
     <btnPrimary text="KI-Beratung" />
