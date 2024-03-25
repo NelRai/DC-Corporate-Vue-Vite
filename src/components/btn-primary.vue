@@ -11,6 +11,6 @@ const count = ref(0)
 
 <template>
 
-  <button class="bg-red-400 text-white rounded-3xl background btn primary">{{ text }}</button> 
+  <button class="min-h-12 bg-red-400 text-white  text-base lg:text-lg rounded-3xl background btn primary">{{ text }}</button> 
  
 </template>

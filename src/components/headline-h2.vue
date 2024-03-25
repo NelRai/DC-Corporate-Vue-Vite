@@ -10,6 +10,6 @@ const count = ref(0)
 
 <template>
 
-  <h2 class="text-3xl">{{headline}}</h2>
+  <h2 class="text-3xl lg:text-7xl">{{headline}}</h2>
  
 </template>
