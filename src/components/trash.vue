@@ -122,3 +122,28 @@
       />
     </form>
   </section>
+
+  <!-- akorrdeon -->
+
+  <!-- <div class="border-b border-neutral-400 pb-4">
+    <span
+      class="text-xs border border-red-400 text-red-400 rounded-md px-2 py-0.5"
+      >Workshop 01</span
+    >
+
+    <div class="flex flex-row gap-x-4 justify-center items-center mt-2">
+      <div>
+        <h3 class="text-lg">{{ faq.question }}</h3>
+
+        <p class="mt-4 text-base">
+          {{ faq.answer }}
+        </p>
+      </div>
+
+      <div
+        class="h-6 w-6 flex justify-center items-center bg-red-400 rounded-full text-xl text-white"
+      >
+        +
+      </div>
+    </div>
+  </div> -->

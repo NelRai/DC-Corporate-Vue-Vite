@@ -12,6 +12,11 @@ export default {
       },
       borderRadius: {
         '4xl': '4rem',
+        'images': '3rem',
+      },
+      zIndex: {
+        '60': '60',
+        '70': '70',
       },
       fontSize: {
         '1xl': ['1.5rem', {

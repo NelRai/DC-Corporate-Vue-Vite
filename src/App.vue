@@ -4,6 +4,7 @@ import WrapperContent from "./components/wrapper-content.vue";
 import btnPrimary from "./components/btn-primary.vue";
 import btnSecondary from "./components/btn-secondary.vue";
 import headlineH2 from "./components/headline-h2.vue";
+import akkordion from "./components/akkordion.vue";
 import MagazineLinks from "./components/MagazineLinks.vue";
 import LogoReel from "./components/logoReel.vue";
 
@@ -11,22 +12,35 @@ import Footer from "./components/footer.vue";
 </script>
 
 <template>
-  <header class="fixed flex items-end	  w-full m-auto max-w-7xl left-1/2 -translate-x-2/4">
+  <header
+    class="fixed flex items-end w-full m-auto max-w-7xl left-1/2 -translate-x-2/4"
+  >
     <!--change to fixed if on scroll header hide is implemented  -->
     <div class="flex-1">
-
-
-    
-    <div class="">
-      <img src="./assets/dc-logo-black.png" alt="" class=" h-20 bg-white  p-4 rounded-b-lg shadow-md" />
+      <div class="">
+        <img
+          src="./assets/dc-logo-black.png"
+          alt=""
+          class="h-20 bg-white p-4 rounded-b-lg shadow-md"
+        />
+      </div>
     </div>
-  </div>
-    <nav class="hidden lg:flex bg-white rounded-full flex-1 justify-center shadow-md">
+    <nav
+      class="hidden lg:flex bg-white rounded-full flex-1 justify-center shadow-md"
+    >
       <ul class="flex flex-row gap-9 py-3 px-8 justify-center items-center">
-        <li class="p-0 m-0 h-fit leading-4"><a href="" class="text-black text-lg">Über uns</a></li>
-        <li class="p-0 m-0 h-fit leading-4"><a href="" class="text-black text-lg">Agentur</a></li>
-        <li class="p-0 m-0 h-fit leading-4"><a href="" class="text-black text-lg">Medien</a></li>
-        <li class="p-0 m-0 h-fit leading-4"><a href="" class="text-black text-lg">Kontakt</a></li>
+        <li class="p-0 m-0 h-fit leading-4">
+          <a href="" class="text-black text-lg">Über uns</a>
+        </li>
+        <li class="p-0 m-0 h-fit leading-4">
+          <a href="" class="text-black text-lg">Agentur</a>
+        </li>
+        <li class="p-0 m-0 h-fit leading-4">
+          <a href="" class="text-black text-lg">Medien</a>
+        </li>
+        <li class="p-0 m-0 h-fit leading-4">
+          <a href="" class="text-black text-lg">Kontakt</a>
+        </li>
       </ul>
     </nav>
     <div class="flex-1 flex justify-center gap-2">
@@ -36,8 +50,14 @@ import Footer from "./components/footer.vue";
   </header>
 
   <div class="flex flex-col gap-8 pt-28 pb-28 bg-pink-200">
-    <div class="flex flex-col gap-8 text-center lg:text-left  w-full max-w-7xl m-auto ">
-      <h1 class="font-blinker font-light text-3xl  lg:text-[7rem] lg:leading-[7rem] ">Neues Denken.<br />Neue Kompetenzen.</h1>
+    <div
+      class="flex flex-col gap-8 text-center lg:text-left w-full max-w-7xl m-auto"
+    >
+      <h1
+        class="font-blinker font-light text-3xl lg:text-[7rem] lg:leading-[7rem]"
+      >
+        Neues Denken.<br />Neue Kompetenzen.
+      </h1>
       <p class="text-base lg:text-3xl font-blinker">
         Medienhaus & KI-zentrierte Agentur test 
       </p>
@@ -50,14 +70,14 @@ import Footer from "./components/footer.vue";
   </div>
 
   <div
-    class="flex flex-col gap-4 -mt-12  pt-16 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44"
+    class="flex flex-col gap-4 -mt-12 pt-16 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 z-10 relative"
   >
     <div class="px-8 lg:px-0 max-w-7xl m-auto flex flex-col gap-4 lg:gap-16">
       <p class="text-1xl lg:text-7xl">
         <span class="text-red-400">Deep Content by heise</span> ist ein
         digitales Medienhaus mit jahrelanger journalistischer Tech-Expertise.
       </p>
-      <p class="lg:text-4xl" >
+      <p class="lg:text-4xl">
         Journalist:innen und Kommunikationsprofis arbeiten hier erfolgreich mit
         generativer KI. Unsere Agentur-Leistungen umfassen etwa Beratung zu KI
         im Unternehmen, sorgfältig abgestimmte Workshops, individuelle Beratung,
@@ -69,7 +89,7 @@ import Footer from "./components/footer.vue";
   </div>
 
   <div
-    class="-mt-12 px-8 pt-16 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 relative overflow-hidden -z-10"
+    class="-mt-12 px-8 pt-16 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 relative overflow-hidden z-20 relative"
   >
     <div class="max-w-7xl m-auto lg:grid lg:grid-cols-2 lg:gap-16">
       <div class="flex flex-col gap-8 lg:gap-16">
@@ -88,19 +108,21 @@ import Footer from "./components/footer.vue";
       </div>
     </div>
     <div>
-      <img src="./assets/background-element-01.svg" alt="" class="w-1/2 absolute right-0 -bottom-1/4 opacity-30">
+      <img
+        src="./assets/background-element-01.svg"
+        alt=""
+        class="w-1/2 absolute right-0 -bottom-1/4 opacity-30"
+      />
     </div>
-
   </div>
 
-
-
   <div
-    class="-mt-12 px-8 pt-16 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44"
+    class="-mt-12 px-8 pt-16 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 z-30 relative"
   >
-    <div class="max-w-7xl m-auto lg:grid lg:grid-cols-2 lg:gap-16">
-      <div class="flex flex-col gap-8 lg:gap-16">
-        <headlineH2 headline="KI-Workshops" />
+    <div class="max-w-7xl m-auto flex flex-col gap-8 ">
+      <headlineH2 headline="KI-Workshops"  />
+
+      <div class="flex flex-col gap-8 lg:grid lg:grid-cols-2 lg:gap-16">
         <p>
           Sie möchten Ihre Mitarbeitenden auf den aktuellen Stand der Dinge
           bringen? Lernen Sie, was KI kann, was nicht, wie man damit umgeht und
@@ -108,12 +130,17 @@ import Footer from "./components/footer.vue";
           Qualitätsgewinne zu holen sind. Unsere beliebten Workshops lassen Sie
           nicht nur mitreden – sie wissen danach auch genau, was zu tun ist.
         </p>
+        <akkordion />
       </div>
+
+      
+
+
     </div>
   </div>
 
   <div
-    class="-mt-12 px-8 pt-16 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44"
+    class="-mt-12 px-8 pt-16 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 z-40 relative"
   >
     <div class="max-w-7xl m-auto lg:grid lg:grid-cols-2 lg:gap-16">
       <div class="flex flex-col gap-8 lg:gap-16">
@@ -145,12 +172,16 @@ import Footer from "./components/footer.vue";
   </div>
 
   <div
-    class="flex flex-col gap-16 -mt-12 px-8 pt-8 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44"
+    class="flex flex-col gap-16 -mt-12 px-8 pt-8 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 z-50 relative"
   >
     <article
       class="flex flex-col gap-8 max-w-7xl m-auto lg:*:w-1/2 lg:flex-row lg:gap-16"
     >
-      <img class="w-full" src="./assets/mixed-image.jpg" alt="" />
+      <img
+        class="w-full shadow-lg rounded-3xl lg:rounded-images"
+        src="./assets/mixed-image.jpg"
+        alt=""
+      />
       <div class="flex flex-col gap-8">
         <p>
           <span class="text-red-400">MIXED</span> ist in Deutschland, Österreich
@@ -175,7 +206,11 @@ import Footer from "./components/footer.vue";
     <article
       class="flex flex-col gap-8 max-w-7xl m-auto lg:*:w-1/2 lg:flex-row-reverse lg:gap-16"
     >
-      <img class="w-full" src="./assets/decoder-image.png" alt="" />
+      <img
+        class="w-full shadow-lg rounded-3xl lg:rounded-images"
+        src="./assets/decoder-image.png"
+        alt=""
+      />
       <div class="flex flex-col gap-8">
         <p>
           <span class="text-red-400">THE DECODER</span> ist eine internationale
@@ -199,7 +234,11 @@ import Footer from "./components/footer.vue";
     <article
       class="flex flex-col gap-8 max-w-7xl m-auto lg:*:w-1/2 lg:gap-16 lg:flex-row"
     >
-      <img class="w-full" src="./assets/s4g-image.png" alt="" />
+      <img
+        class="w-full shadow-lg rounded-3xl lg:rounded-images"
+        src="./assets/s4g-image.png"
+        alt=""
+      />
       <div class="flex flex-col gap-8">
         <p>
           <span class="text-red-400">SPACE4GAMES</span> beschäftigt sich
@@ -221,7 +260,7 @@ import Footer from "./components/footer.vue";
   </div>
 
   <div
-    class="-mt-12 px-8 pt-16 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44"
+    class="-mt-12 px-8 pt-16 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 z-60 relative"
   >
     <div class="max-w-7xl m-auto">
       <form
