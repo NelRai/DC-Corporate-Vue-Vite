@@ -11,19 +11,28 @@ import Footer from "./components/footer.vue";
 </script>
 
 <template>
-  <header class="absolute flex w-full max-w-7xl m-auto">
+  <header class="fixed flex items-end	  w-full m-auto max-w-7xl left-1/2 -translate-x-2/4">
     <!--change to fixed if on scroll header hide is implemented  -->
-    <div class="h-20 bg-white ml-8 p-4 rounded-b-lg shadow-md">
-      <img src="./assets/dc-logo-black.png" alt="" class="h-12" />
+    <div class="flex-1">
+
+
+    
+    <div class="">
+      <img src="./assets/dc-logo-black.png" alt="" class=" h-20 bg-white  p-4 rounded-b-lg shadow-md" />
     </div>
-    <nav class="hidden">
-      <ul>
-        <li><a href="">Über uns</a></li>
-        <li><a href="">Agentur</a></li>
-        <li><a href="">Medien</a></li>
-        <li><a href="">Kontakt</a></li>
+  </div>
+    <nav class="hidden lg:flex bg-white rounded-full flex-1 justify-center shadow-md">
+      <ul class="flex flex-row gap-9 py-3 px-8 justify-center items-center">
+        <li class="p-0 m-0 h-fit leading-4"><a href="" class="text-black text-lg">Über uns</a></li>
+        <li class="p-0 m-0 h-fit leading-4"><a href="" class="text-black text-lg">Agentur</a></li>
+        <li class="p-0 m-0 h-fit leading-4"><a href="" class="text-black text-lg">Medien</a></li>
+        <li class="p-0 m-0 h-fit leading-4"><a href="" class="text-black text-lg">Kontakt</a></li>
       </ul>
     </nav>
+    <div class="flex-1 flex justify-center gap-2">
+      <span class="text-red-400 underline">EN</span>
+      <span class="text-black">DE</span>
+    </div>
   </header>
 
   <div class="flex flex-col gap-8 pt-28 pb-28 bg-pink-200">
@@ -33,7 +42,7 @@ import Footer from "./components/footer.vue";
         Medienhaus & KI-zentrierte Agentur test 
       </p>
     </div>
-    <div class="flex flex-wrap justify-center gap-3">
+    <div class="flex flex-wrap justify-center gap-3 mx-10 lg:mx-0">
       <btnPrimary text="KI-Beratung" />
       <btnPrimary text="KI-Workshops" />
       <btnPrimary text="KI-Software" />
@@ -60,7 +69,7 @@ import Footer from "./components/footer.vue";
   </div>
 
   <div
-    class="-mt-12 px-8 pt-16 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44"
+    class="-mt-12 px-8 pt-16 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 relative overflow-hidden -z-10"
   >
     <div class="max-w-7xl m-auto lg:grid lg:grid-cols-2 lg:gap-16">
       <div class="flex flex-col gap-8 lg:gap-16">
@@ -78,7 +87,13 @@ import Footer from "./components/footer.vue";
         <btnPrimary text="Jetzt Beratungstermin vereinbaren" />
       </div>
     </div>
+    <div>
+      <img src="./assets/background-element-01.svg" alt="" class="w-1/2 absolute right-0 -bottom-1/4 opacity-30">
+    </div>
+
   </div>
+
+
 
   <div
     class="-mt-12 px-8 pt-16 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44"
