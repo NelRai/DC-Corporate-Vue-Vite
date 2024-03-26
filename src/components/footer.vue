@@ -26,7 +26,7 @@ const count = ref(0);
     </div>
 
     <div
-      class="flex flex-col lg:flex-row-reverse gap-8 lg:pt-8 lg:justify-between lg:border-t lg:border-t-white"
+      class="flex flex-col lg:flex-row-reverse gap-8 lg:pt-8 lg:justify-between lg:border-t lg:border-t-neutral-500"
     >
       <div class="flex flex-row">
         <img src="" alt="" />

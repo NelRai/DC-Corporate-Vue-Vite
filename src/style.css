@@ -148,22 +148,16 @@ button:focus-visible {
   /* height: auto; */
   opacity: 1;
   transition: all 1s;
-
 }
 
 .answer h4 {
   font-weight: bold;
 }
-.answer p {
 
-}
 .answer ul {
   list-style-type: disc;
   padding-left: 1rem;
   margin-bottom: 1rem;
-}
-.answer li {
-  
 }
 
 .plus-vertical {
@@ -186,4 +180,46 @@ button:focus-visible {
 .open .plus-vertical {
   transform: rotate(90deg);
   transition: all 0.3s;
+}
+
+  
+#svg-circle {
+  transform: scale(1);
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: circle 8s ease-in-out infinite alternate;
+}
+
+@keyframes circle {
+  to {
+    transform: scale(1.05);
+  }
+}
+
+#svg-rectangle {
+  transform: scale(1);
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: rectangle 8s ease-in-out infinite alternate;
+}
+
+@keyframes rectangle {
+  to {
+    transform: scale(1.05);
+  }
+}
+
+
+#circle svg {
+  position: absolute;
+    bottom: 0;
+    right: 0;
+    /* opacity: 0.3; */
+}
+
+#circle #svg-circle {
+  right: -50%;
+}
+#circle #svg-rectangle {
+  right: -20%;
 }
