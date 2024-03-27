@@ -1,24 +1,27 @@
 <script setup>
 import { onMounted  } from "vue";
 
+//Components
 import HelloWorld from "./components/HelloWorld.vue";
 import WrapperContent from "./components/wrapper-content.vue";
 import navLink from "./components/nav-link.vue";
-
 import btnPrimary from "./components/btn-primary.vue";
 import btnSecondary from "./components/btn-secondary.vue";
 import headlineH2 from "./components/headline-h2.vue";
 import akkordion from "./components/akkordion.vue";
 import MagazineLinks from "./components/MagazineLinks.vue";
 import LogoReel from "./components/logoReel.vue";
-
 import bgSVG01 from "./components/bg-svg-01.vue";
 import bgSVG01b from "./components/bg-svg-01b.vue";
 import HeroAnimation from "./components/hero-bg-animation.vue";
-
-
 import Footer from "./components/footer.vue";
 
+// GSAP
+import { gsap } from "gsap";    
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
+// Navbar Animation on Scroll
 var prevScrollpos = window.scrollY;
 window.onscroll = function() {
   var currentScrollPos = window.scrollY;
@@ -70,7 +73,7 @@ window.onscroll = function() {
         Neues Denken.<br />Neue Kompetenzen.
       </h1>
       <p class="text-base lg:text-3xl font-blinker">
-        Medienhaus & KI-zentrierte Agentur test 
+        Medienhaus & KI-zentrierte Agentur
       </p>
     </div>
     <div class="flex flex-wrap justify-center gap-3 mx-10 lg:mx-0">
