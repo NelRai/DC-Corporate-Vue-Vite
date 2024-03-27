@@ -1,4 +1,6 @@
 <script setup>
+import { onMounted  } from "vue";
+
 import HelloWorld from "./components/HelloWorld.vue";
 import WrapperContent from "./components/wrapper-content.vue";
 import navLink from "./components/nav-link.vue";
@@ -16,14 +18,28 @@ import HeroAnimation from "./components/hero-bg-animation.vue";
 
 
 import Footer from "./components/footer.vue";
+
+var prevScrollpos = window.scrollY;
+window.onscroll = function() {
+  var currentScrollPos = window.scrollY;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").classList.remove("navbar--hidden");
+  } else {
+    document.getElementById("navbar").classList.add("navbar--hidden");
+  }
+  prevScrollpos = currentScrollPos;
+}
 </script>
 
 <template>
-  <header class="fixed flex items-end w-full m-auto max-w-7xl left-1/2 -translate-x-2/4 z-99">
+  <div class="wrapper">
+  <header id="navbar" class="fixed flex items-end w-full m-auto max-w-7xl left-1/2 z-99 navbar transition-all"
+  >
     <!--change to fixed if on scroll header hide is implemented  -->
     <div class="flex-1">
       <div class="">
-        <img src="./assets/dc-logo-black.png" alt="" class="h-20 bg-white/70  p-4 rounded-b-lg shadow-md backdrop-blur-sm" />
+        <img src="./assets/dc-logo-black.png" alt=""
+          class="h-20 bg-white/70  p-4 rounded-b-lg shadow-md backdrop-blur-sm" />
       </div>
     </div>
     <nav class="hidden lg:flex bg-white/70 rounded-full flex-initial justify-center shadow-md backdrop-blur-sm">
@@ -162,10 +178,10 @@ import Footer from "./components/footer.vue";
       </div>
     </div>
 
-        <div id="circle" class="w-1/2 absolute right-0 -bottom-1/4 opacity-30">
+    <div id="circle" class="w-1/2 absolute right-0 -bottom-1/4 opacity-30">
 
-    <bgSVG01  />
-    <bgSVG01b  />
+      <bgSVG01 />
+      <bgSVG01b />
 
     </div>
   </div>
@@ -259,4 +275,6 @@ import Footer from "./components/footer.vue";
   </div>
 
   <Footer />
+
+</div>
 </template>

@@ -226,3 +226,22 @@ button:focus-visible {
 #circle #svg-rectangle {
   right: -20%;
 }
+
+
+/* navbar anim */
+
+/* .header {
+  transform: translateY(0);
+  transition: transform 300ms linear;
+} */
+
+.navbar {
+  transform: translateX(-50%);
+  transition: transform 300ms ease-in-out;
+
+}
+.navbar--hidden {
+    transform: translateX(-50%) translateY(-120%);
+    transition: transform 300ms ease-in-out;
+
+}

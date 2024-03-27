@@ -6,6 +6,8 @@ defineProps(["faq"]); // recieving faq object as a prop.
 
 const emit = defineEmits(["toggleAnswer"]); // defining events to emit
 const handleClick = (id) => emit("toggleAnswer", id); // emitting toggleAnswer event with id attribute.
+
+
 </script>
 
 <template>
