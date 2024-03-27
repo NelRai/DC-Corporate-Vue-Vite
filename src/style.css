@@ -147,15 +147,21 @@ button:focus-visible {
 
 .answer {
 
-  display: none;
+  /* display: none; */
   /* height: 0;*/
-  opacity: 0;
+  visibility: hidden;
   transition: all 1s; 
+  transition: opacity 1s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
 
 }
 
 .answer.open {
   display: block;
+  visibility: visible;
+  height: auto;
   /* height: auto; */
   opacity: 1;
   transition: all 1s;
