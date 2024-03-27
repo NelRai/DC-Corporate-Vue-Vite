@@ -7,14 +7,20 @@ defineProps({
 
 const count = ref(0)
 const items = ref ([
-  "dc-logo-black",
-  "dc-logo-black",
-  "dc-logo-black",
-  "dc-logo-black",
-  "dc-logo-black",
-  "dc-logo-black",
-  "dc-logo-black",
-  "dc-logo-black"
+  "logo_augmentit",
+  "logo_bwi",
+  "logo_dapr",
+  "logo_forwardpublishing",
+  "logo_gft",
+  "logo_heisemedien",
+  "logo_hessianai",
+  "logo_jellyfish",
+  "logo_netcetera",
+  "logo_nmy",
+  "logo_ptc",
+  "logo_script",
+  "logo_sternwald",
+  "logo_vrdirect",
 ])
 </script>
 
@@ -28,12 +34,12 @@ const items = ref ([
         <span><img :src="('src/assets/dc-logo-black.png')" alt="" class="min-h-8 w-auto" /></span>
       </li> -->
       <li v-for="item in items" class="" >
-      <img :src="('src/assets/' + item + '.png')" alt="" class="" />
+      <img :src="('src/assets/logos/' + item + '.svg')" alt="" class="h-8" />
       </li>
     </ul>
     <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
       <li v-for="item in items" class="" >
-      <img :src="('src/assets/' + item + '.png')" alt="" class="" />
+      <img :src="('src/assets/logos/' + item + '.svg')" alt="" class="h-8" />
       </li>
     </ul>
 
