@@ -57,6 +57,6 @@ export default {
       'source': ['Source Sans 3', 'ui-sans-serif', 'system-ui', 'sans-serif']
     }
   },
-  plugins: [],
+  plugins: [require('tailwind-hamburgers')],
 }
 
