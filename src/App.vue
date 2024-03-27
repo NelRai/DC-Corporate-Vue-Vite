@@ -10,6 +10,7 @@ import LogoReel from "./components/logoReel.vue";
 
 import bgSVG01 from "./components/bg-svg-01.vue";
 import bgSVG01b from "./components/bg-svg-01b.vue";
+import HeroAnimation from "./components/hero-bg-animation.vue";
 
 
 import Footer from "./components/footer.vue";
@@ -45,7 +46,7 @@ import Footer from "./components/footer.vue";
     </div>
   </header>
 
-  <div class="flex flex-col gap-8 pt-32 pb-28 lg:pt-44 lg:pb-28 bg-pink-200 lg:gap-32 ">
+  <div class="flex flex-col gap-8 pt-32 pb-28 lg:pt-44 lg:pb-28 lg:gap-32 ">
     <div class="flex flex-col gap-2 lg:gap-8 text-center lg:text-left w-full max-w-7xl m-auto">
       <h1 class="font-blinker font-light text-3xl lg:text-[7rem] lg:leading-[7rem]">
         Neues Denken.<br />Neue Kompetenzen.
@@ -59,6 +60,8 @@ import Footer from "./components/footer.vue";
       <btnPrimary text="KI-Workshops" link="#ki-workshops" />
       <btnPrimary text="KI-Software" link="#ki-software" />
     </div>
+
+    <HeroAnimation />
   </div>
 
   <div id="ueber-uns"
@@ -168,7 +171,7 @@ import Footer from "./components/footer.vue";
   <div id="medienhaus"
     class="flex flex-col gap-16 -mt-12 px-8 pt-8 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 z-50 relative">
     <article class="flex flex-col gap-8 max-w-7xl m-auto lg:*:w-1/2 lg:flex-row lg:gap-16">
-      <img class="w-full shadow-lg rounded-3xl lg:rounded-images" src="./assets/mixed-image.jpg" alt="" />
+      <img class="w-full h-full shadow-lg rounded-3xl lg:rounded-images" src="./assets/mixed-magazine.svg" alt="" />
       <div class="flex flex-col gap-8">
         <p>
           <span class="text-red-400">MIXED</span> ist in Deutschland, Österreich
@@ -185,7 +188,7 @@ import Footer from "./components/footer.vue";
     </article>
 
     <article class="flex flex-col gap-8 max-w-7xl m-auto lg:*:w-1/2 lg:flex-row-reverse lg:gap-16">
-      <img class="w-full shadow-lg rounded-3xl lg:rounded-images" src="./assets/decoder-image.png" alt="" />
+      <img class="w-full h-full shadow-lg rounded-3xl lg:rounded-images" src="./assets/decoder-magazine.svg" alt="" />
       <div class="flex flex-col gap-8">
         <p>
           <span class="text-red-400">THE DECODER</span> ist eine internationale
@@ -201,7 +204,7 @@ import Footer from "./components/footer.vue";
     </article>
 
     <article class="flex flex-col gap-8 max-w-7xl m-auto lg:*:w-1/2 lg:gap-16 lg:flex-row">
-      <img class="w-full shadow-lg rounded-3xl lg:rounded-images" src="./assets/s4g-image.png" alt="" />
+      <img class="w-full h-full shadow-lg rounded-3xl lg:rounded-images" src="./assets/s4g-magazine.svg" alt="" />
       <div class="flex flex-col gap-8">
         <p>
           <span class="text-red-400">SPACE4GAMES</span> beschäftigt sich
