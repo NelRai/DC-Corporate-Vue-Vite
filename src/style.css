@@ -22,10 +22,18 @@ a {
   color: #FF646F;
   text-decoration: inherit;
   transition: all 0.3s;
+  /* text-decoration: none; */
 }
 a:hover {
-  color: #F34B57;
+  color: #385CFA;
   transition: all 0.3s;
+  /* text-decoration: underline; */
+}
+
+footer a:hover {
+  color: #FF646F;
+  transition: all 0.3s;
+  /* text-decoration: underline; */
 }
 
 body {
@@ -80,10 +88,10 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
-  a:hover {
-    color: #F34B57;
+  /* a:hover {
+    color: #385CFA;
     transition: all 0.3s;
-  }
+  } */
   button {
     background-color: #f9f9f9;
   }
@@ -164,7 +172,7 @@ button:focus-visible {
 }
 
 .plus-vertical {
-  width: 2px;
+    width: 2px;
     background: #fff;
     height: 14px;
     border-radius: 99px;
@@ -185,8 +193,12 @@ button:focus-visible {
   transition: all 0.3s;
 }
 
+@media (min-width: 1024px) {
+  /* … */
+}
+
   
-#svg-circle {
+/* #svg-circle {
   transform: scale(1);
   transform-box: fill-box;
   transform-origin: center;
@@ -210,7 +222,7 @@ button:focus-visible {
   to {
     transform: scale(1.05);
   }
-}
+} */
 
 
 #circle svg {
