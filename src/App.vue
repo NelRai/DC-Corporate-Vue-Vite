@@ -1,6 +1,8 @@
 <script setup>
 import HelloWorld from "./components/HelloWorld.vue";
 import WrapperContent from "./components/wrapper-content.vue";
+import navLink from "./components/nav-link.vue";
+
 import btnPrimary from "./components/btn-primary.vue";
 import btnSecondary from "./components/btn-secondary.vue";
 import headlineH2 from "./components/headline-h2.vue";
@@ -17,32 +19,32 @@ import Footer from "./components/footer.vue";
 </script>
 
 <template>
-  <header class="fixed flex items-end w-full m-auto max-w-7xl left-1/2 -translate-x-2/4">
+  <header class="fixed flex items-end w-full m-auto max-w-7xl left-1/2 -translate-x-2/4 z-99">
     <!--change to fixed if on scroll header hide is implemented  -->
     <div class="flex-1">
       <div class="">
-        <img src="./assets/dc-logo-black.png" alt="" class="h-20 bg-white p-4 rounded-b-lg shadow-md" />
+        <img src="./assets/dc-logo-black.png" alt="" class="h-20 bg-white/70  p-4 rounded-b-lg shadow-md backdrop-blur-sm" />
       </div>
     </div>
-    <nav class="hidden lg:flex bg-white rounded-full flex-1 justify-center shadow-md">
+    <nav class="hidden lg:flex bg-white/70 rounded-full flex-initial justify-center shadow-md backdrop-blur-sm">
       <ul class="flex flex-row gap-5 py-3 px-8 justify-center items-center">
         <li class="p-0 m-0 h-fit leading-4">
-          <a href="#ueber-uns" class="text-black text-lg">Über uns</a>
+          <navLink text="Über uns" link="#ueber-uns" />
         </li>
         <li class="p-0 m-0 h-fit leading-4">
-          <a href="#ki-beratung" class="text-black text-lg">KI-Agentur</a>
+          <navLink text="KI-Agentur" link="#ki-beratung" />
         </li>
         <li class="p-0 m-0 h-fit leading-4">
-          <a href="#medienhaus" class="text-black text-lg">Medienhaus</a>
+          <navLink text="Medienhaus" link="#medienhaus" />
         </li>
         <li class="p-0 m-0 h-fit leading-4">
-          <a href="#kontakt" class="text-black text-lg">Kontakt</a>
+          <navLink text="Kontakt" link="#kontakt" />
         </li>
       </ul>
     </nav>
     <div class="flex-1 flex justify-center gap-2 text-lg font-normal">
-      <span class="text-red-400 underline">EN</span>
-      <span class="text-black">DE</span>
+      <span class="text-dc-400 underline">EN</span>
+      <span class="text-dc-neutral900">DE</span>
     </div>
   </header>
 
@@ -68,7 +70,7 @@ import Footer from "./components/footer.vue";
     class="flex flex-col gap-4 -mt-12 pt-16 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 z-10 relative">
     <div class="px-8 lg:px-0 max-w-7xl m-auto flex flex-col gap-4 lg:gap-16">
       <p class="text-1xl lg:text-7xl">
-        <span class="text-red-400">Deep Content by heise</span> ist ein
+        <span class="text-dc-400">Deep Content by heise</span> ist ein
         digitales Medienhaus mit jahrelanger journalistischer Tech-Expertise.
       </p>
       <p class="lg:text-4xl">
@@ -174,7 +176,7 @@ import Footer from "./components/footer.vue";
       <img class="w-full h-full shadow-lg rounded-3xl lg:rounded-images" src="./assets/mixed-magazine.svg" alt="" />
       <div class="flex flex-col gap-8">
         <p>
-          <span class="text-red-400">MIXED</span> ist in Deutschland, Österreich
+          <span class="text-dc-400">MIXED</span> ist in Deutschland, Österreich
           und der Schweiz Marktführer für News und Berichte rund um
           Zukunfts-Technologien wie VR, AR, KI und mehr. Bei uns trifft sich
           auch die deutschsprachige Mixed-Reality-Community. Bekannte
@@ -191,7 +193,7 @@ import Footer from "./components/footer.vue";
       <img class="w-full h-full shadow-lg rounded-3xl lg:rounded-images" src="./assets/decoder-magazine.svg" alt="" />
       <div class="flex flex-col gap-8">
         <p>
-          <span class="text-red-400">THE DECODER</span> ist eine internationale
+          <span class="text-dc-400">THE DECODER</span> ist eine internationale
           digitale Publikations-, Wissens- und Business-Plattform, die
           KI-Wissenschaft, Politik und Wirtschaft miteinander verbindet. Unsere
           Berichterstattung ist aktuell, sachlich, tiefgründig und dennoch
@@ -207,7 +209,7 @@ import Footer from "./components/footer.vue";
       <img class="w-full h-full shadow-lg rounded-3xl lg:rounded-images" src="./assets/s4g-magazine.svg" alt="" />
       <div class="flex flex-col gap-8">
         <p>
-          <span class="text-red-400">SPACE4GAMES</span> beschäftigt sich
+          <span class="text-dc-400">SPACE4GAMES</span> beschäftigt sich
           ausführlich und detailliert mit Videospielen und weiteren Tech-Themen,
           die unsere Autoren begeistern. Vom Report über die besten Guides und
           Top-Tools bis hin zu starken Meinungen. Die Artikel erscheinen auch in
@@ -230,28 +232,28 @@ import Footer from "./components/footer.vue";
           <div class="">
             <!-- <label for="fname" class="text-1xl font-light">Name*</label><br> -->
             <input type="text" id="fname" name="fname" placeholder="Name*"
-              class="w-full border-b border-solid border-red-400 placeholder:text-black" required /><br />
+              class="w-full border-b border-solid border-dc-400 placeholder:text-dc-neutral900" required /><br />
           </div>
 
           <div class="">
             <!-- <label for="lcompany">Unternehmen</label><br> -->
             <input type="text" id="lcompany" name="lcompany" placeholder="Unternehmen"
-              class="w-full border-b border-solid border-red-400 placeholder:text-black" />
+              class="w-full border-b border-solid border-dc-400 placeholder:text-dc-neutral900" />
           </div>
           <div class="">
             <!-- <label for="lmail">E-Mail*</label><br> -->
             <input type="email" id="lmail" name="lmail" placeholder="E-Mail*"
-              class="w-full border-b border-solid border-red-400 placeholder:text-black" required />
+              class="w-full border-b border-solid border-dc-400 placeholder:text-dc-neutral900" required />
           </div>
         </div>
         <div class="">
           <!-- <label for="lmsg">Nachricht*</label><br> -->
           <textarea type="text" id="lmsg" name="lmsg" placeholder="Nachricht*"
-            class="w-full lg:h-full border-b border-solid border-red-400 min-h-32 placeholder:align-top placeholder:text-black"></textarea>
+            class="w-full lg:h-full border-b border-solid border-dc-400 min-h-32 placeholder:align-top placeholder:text-dc-neutral900"></textarea>
         </div>
 
         <input type="submit"
-          class="min-h-12 lg:w-max lg:min-w-80 lg:min-h-16 lg:px-12 lg:m-auto bg-red-400 text-white rounded-3xl lg:rounded-full background btn primary lg:col-span-2" />
+          class="min-h-12 lg:w-max lg:min-w-80 lg:min-h-16 lg:px-12 lg:m-auto bg-dc-400 text-white rounded-3xl lg:rounded-full background btn primary lg:col-span-2" />
       </form>
     </div>
   </div>

@@ -7,6 +7,13 @@ export default {
   theme: {
 
     extend: {
+      colors: {
+        dc: {
+          400: '#FF646F',
+          500: '#F34B57',
+          neutral900: '#191D2E',
+        }
+      },
       boxShadow: {
         'top3xl': '0px 0px 40px 0px rgba(0, 0, 0, 0.15)',
       },
@@ -17,6 +24,7 @@ export default {
       zIndex: {
         '60': '60',
         '70': '70',
+        '99': '99',
       },
       fontSize: {
         '1xl': ['1.5rem', {
