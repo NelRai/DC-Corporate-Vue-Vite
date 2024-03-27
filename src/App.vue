@@ -83,7 +83,7 @@ import Footer from "./components/footer.vue";
   </div>
 
   <div id="ki-beratung"
-    class="-mt-12 px-8 pt-16 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 relative overflow-hidden z-20 relative">
+    class="-mt-12 px-8 pt-16 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 relative overflow-hidden z-20">
     <div class="max-w-7xl m-auto lg:grid lg:grid-cols-2 lg:gap-16">
       <div class="flex flex-col gap-8 lg:gap-16">
         <headlineH2 headline="KI-Beratung" />
@@ -109,7 +109,7 @@ import Footer from "./components/footer.vue";
   </div>
 
   <div id="ki-workshops"
-    class="-mt-12 px-8 pt-16 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 z-30 relative">
+    class="-mt-12 px-8 pt-16 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 overflow-hidden z-30 relative">
     <div class="max-w-7xl m-auto flex flex-col gap-8 ">
       <headlineH2 headline="KI-Workshops" />
 
@@ -131,7 +131,7 @@ import Footer from "./components/footer.vue";
   </div>
 
   <div id="ki-software"
-    class="-mt-12 px-8 pt-16 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 z-40 relative">
+    class="-mt-12 px-8 pt-16 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 overflow-hidden z-40 relative">
     <div class="max-w-7xl m-auto lg:grid lg:grid-cols-2 lg:gap-16">
       <div class="flex flex-col gap-8 lg:gap-16">
         <headlineH2 headline="KI-Software" />
