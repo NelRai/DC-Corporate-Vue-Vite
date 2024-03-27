@@ -13,6 +13,7 @@ export default {
           500: '#F34B57',
           neutral900: '#191D2E',
           neutral200: '#DFE2EC',
+          blue: '#385CFA',
         }
       },
       boxShadow: {

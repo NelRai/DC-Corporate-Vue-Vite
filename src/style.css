@@ -263,3 +263,40 @@ button:focus-visible {
     transition: transform 300ms ease-in-out;
 
 }
+
+.faq .header h3,
+.faq .header .workshop-label,
+.faq .header .plus-sphere {
+  transition: all 0.3s;
+}
+
+.faq .header.open h3,
+.faq .header.open .workshop-label,
+.faq .header.open .plus-sphere {
+  transition: all 0.3s;
+  color: #385CFA;
+  border-color:#385CFA;
+}
+
+.faq .header.open .plus-sphere {
+  background-color: #385CFA;
+}
+
+.faq .header:hover h3 {
+  color: #385CFA;
+  transition: all 0.3s;
+
+} 
+
+.faq .header:hover .workshop-label {
+  color: #385CFA;
+  border-color:#385CFA;
+  transition: all 0.3s;
+
+} 
+
+.faq .header:hover .plus-sphere {
+  background-color: #385CFA;
+  transition: all 0.3s;
+
+} 
