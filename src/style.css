@@ -261,8 +261,13 @@ button:focus-visible {
 .navbar--hidden {
     transform: translateX(-50%) translateY(-120%);
     transition: transform 300ms ease-in-out;
-
 }
+
+.navbarHidden {
+  transform: translateX(-50%);
+  box-shadow: none;
+}
+
 
 .faq .header h3,
 .faq .header .workshop-label,
@@ -300,3 +305,20 @@ button:focus-visible {
   transition: all 0.3s;
 
 } 
+
+/*Hamburger Menu */
+
+.hamburgerMenu {
+  height: 0vh;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s all;
+}
+.hamburgerVisible {
+  height: 100vh;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.2s all;
+
+}
+

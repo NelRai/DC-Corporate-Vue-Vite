@@ -48,10 +48,8 @@ window.onscroll = function () {
   var currentScrollPos = window.scrollY;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").classList.remove("navbar--hidden");
-  } else if (hamburger = true ) {
-    document.getElementById("navbar").classList.add("navbar--hidden");
-  }
-
+  } 
+  
   else {
     document.getElementById("navbar").classList.add("navbar--hidden");
   }
@@ -62,17 +60,17 @@ window.onscroll = function () {
 
 <template>
   <div class="wrapper">
-    <header id="navbar" class="fixed flex px-4 lg:px-0 items-center lg:items-end w-full m-auto max-w-7xl left-1/2 z-99 navbar transition-all rounded-b-lg shadow-md backdrop-blur-sm bg-white/70 lg:bg-transparent lg:backdrop-blur-none lg:shadow-none">
+    <header id="navbar" class="fixed flex lg:grid px-4 lg:pt-3 lg:px-0 items-center lg:items-end w-full m-auto max-w-7xl left-1/2 z-99 navbar transition-all rounded-b-lg shadow-md backdrop-blur-sm bg-white/70 lg:bg-transparent lg:backdrop-blur-none lg:shadow-none"  :class="[ { navbarHidden: hamburger }]"    >
       <!--change to fixed if on scroll header hide is implemented  -->
       
-      <div class="flex-1">
+      <div class="flex-1 lg:absolute">
         <div class="">
           <img src="./assets/dc-logo-black.png" alt=""
-            class="h-auto lg:bg-white/70  py-4 lg:p-4 lg:rounded-b-lg lg:shadow-md lg:backdrop-blur-sm" />
+            class="h-auto lg:bg-white/80  py-4 lg:p-4 lg:rounded-b-lg lg:shadow-md lg:backdrop-blur-sm" />
         </div>
       </div>
       <!-- Hamburger -->
-      <div class="tham tham-e-squeeze tham-w-6 lg:hidden z-99" @click="hamburger = !hamburger" >
+      <div class="tham tham-e-squeeze tham-w-6 lg:hidden z-99" @click="hamburger = !hamburger" :class="[ { test: hamburger }]" >
         <div class="tham-box">
           <div class="tham-inner" />
         </div>
@@ -81,8 +79,8 @@ window.onscroll = function () {
 
      
 
-      <nav class="lg:flex bg-white/70 rounded-full flex-initial justify-center shadow-md backdrop-blur-sm hidden">
-        <ul class="flex flex-col fixed top-0 left-0 w-screen h-screen lg:h-auto lg:flex-row gap-5 py-3 px-8 justify-start items-start lg:justify-center lg:items-center">
+      <nav class="hidden justify-self-center lg:flex bg-white/80 rounded-full flex-initial justify-center shadow-md backdrop-blur-sm  lg:visible">
+        <ul class="flex flex-col lg:h-auto lg:flex-row gap-5 py-3 px-8 justify-start items-start lg:justify-center lg:items-center z-99">
           <li class="p-0 m-0 h-fit leading-4">
             <navLink text="Über uns" link="#ueber-uns" />
           </li>
@@ -103,23 +101,23 @@ window.onscroll = function () {
       </div>
     </header>
 
-    <nav class=" fixed bg-white/90 flex-initial justify-center shadow-md backdrop-blur-sm lg:hidden z-70"  v-if="hamburger">
+    <div class="hamburgerMenu fixed bg-white/90 flex-initial justify-center shadow-md backdrop-blur-sm lg:hidden z-70" :class="[ { hamburgerVisible: hamburger }]" >
  
         <ul class="flex flex-col    w-screen h-screen  gap-5 py-3 px-8 pt-32 justify-start items-center">
           <li class="p-0 m-0 h-fit leading-4 ">
-            <navLink text="Über uns" link="#ueber-uns" class="!text-2xl" />
+            <navLink text="Über uns" link="#ueber-uns" class="!text-2xl"  @click="hamburger = !hamburger"/>
           </li>
           <li class="p-0 m-0 h-fit leading-4">
-            <navLink text="KI-Agentur" link="#ki-beratung" class="!text-2xl" />
+            <navLink text="KI-Agentur" link="#ki-beratung" class="!text-2xl" @click="hamburger = !hamburger" />
           </li>
           <li class="p-0 m-0 h-fit leading-4">
-            <navLink text="Medienhaus" link="#medienhaus" class="!text-2xl" />
+            <navLink text="Medienhaus" link="#medienhaus" class="!text-2xl"  @click="hamburger = !hamburger"/>
           </li>
           <li class="p-0 m-0 h-fit leading-4">
-            <navLink text="Kontakt" link="#kontakt" class="!text-2xl" />
+            <navLink text="Kontakt" link="#kontakt" class="!text-2xl"  @click="hamburger = !hamburger"/>
           </li>
         </ul>
-      </nav>
+      </div>
 
     <div class="flex flex-col gap-8 pt-32 pb-28 lg:pt-44 lg:pb-28 lg:gap-32 ">
       <div class="flex flex-col gap-2 lg:gap-8 text-center lg:text-left w-full max-w-7xl m-auto">
@@ -199,12 +197,12 @@ window.onscroll = function () {
           <akkordion />
         </div>
       </div>
-      <div id="circle" class="w-1/2 absolute right-0 -bottom-1/4 opacity-30">
+      <!-- <div id="circle" class="w-1/2 absolute right-0 -bottom-1/4 opacity-30">
 
         <bgSVG01 />
         <bgSVG01b />
 
-      </div>
+      </div> -->
     </div>
 
     <div id="ki-software"
@@ -237,12 +235,12 @@ window.onscroll = function () {
         </div>
       </div>
 
-      <div id="circle" class="w-1/2 absolute right-0 -bottom-1/4 opacity-30">
+      <!-- <div id="circle" class="w-1/2 absolute right-0 -bottom-1/4 opacity-30">
 
         <bgSVG01 />
         <bgSVG01b />
 
-      </div>
+      </div> -->
     </div>
 
     <div id="medienhaus"
