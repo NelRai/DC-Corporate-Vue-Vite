@@ -37,6 +37,7 @@ defineProps({
   deText: String,
 })
 
+const visibleWorkshop = ref(false)
 
 // const count = ref(0)
 </script>

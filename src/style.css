@@ -18,8 +18,8 @@
 }
 
 :root {
-  color: #213547;
-  background-color: #ffffff;
+  color: #191D2E;
+  background-color: #FCFCFD;
 }
 
 a {
@@ -327,3 +327,7 @@ button:focus-visible {
 
 }
 
+
+#modal.mystyle {
+  display: none;
+}

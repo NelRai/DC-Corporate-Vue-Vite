@@ -147,3 +147,5 @@
       </div>
     </div>
   </div> -->
+
+  <div id="modal"     @click="visible = !visible" :class="[ { test: visible }]"

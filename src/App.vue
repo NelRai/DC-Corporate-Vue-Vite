@@ -27,7 +27,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 //modal const
-const visible = ref(false)
+const visibleBeratung = ref(false)
+const visibleDemo = ref(false)
+const visibleWorkshop = ref(false)
+
+
 
 //burger menu code
 
@@ -59,14 +63,14 @@ window.onscroll = function () {
 </script>
 
 <template>
-  <div class="wrapper">
-    <header id="navbar" class="fixed flex lg:grid px-4 lg:pt-3 lg:px-0 items-center lg:items-end w-full m-auto max-w-7xl left-1/2 z-99 navbar transition-all rounded-b-lg shadow-md backdrop-blur-sm bg-white/70 lg:bg-transparent lg:backdrop-blur-none lg:shadow-none"  :class="[ { navbarHidden: hamburger }]"    >
+  <div class="wrapper ">
+    <header id="navbar" class="fixed flex lg:grid px-4 lg:pt-3 lg:px-0 items-center lg:items-end w-full m-auto max-w-7xl left-1/2 z-99 navbar transition-all rounded-b-lg shadow-md backdrop-blur-sm bg-dc-neutral50/70 lg:bg-transparent lg:backdrop-blur-none lg:shadow-none"  :class="[ { navbarHidden: hamburger }]"    >
       <!--change to fixed if on scroll header hide is implemented  -->
       
       <div class="flex-1 lg:absolute lg:top-0">
         <div class="">
           <img src="./assets/dc-logo-black.png" alt=""
-            class="h-auto lg:bg-white/80  py-4 lg:p-4 lg:rounded-b-lg lg:shadow-md lg:backdrop-blur-sm" />
+            class="h-auto lg:bg-dc-neutral50/80  py-4 lg:p-4 lg:rounded-b-lg lg:shadow-md lg:backdrop-blur-sm" />
         </div>
       </div>
       <!-- Hamburger -->
@@ -79,7 +83,7 @@ window.onscroll = function () {
 
      
 
-      <nav class="hidden justify-self-center lg:flex bg-white/80 rounded-full flex-initial justify-center shadow-md backdrop-blur-sm  lg:visible">
+      <nav class="hidden justify-self-center lg:flex bg-dc-neutral50/80 rounded-full flex-initial justify-center shadow-md backdrop-blur-sm  lg:visible">
         <ul class="flex flex-col lg:h-auto lg:flex-row gap-5 py-3 px-8 justify-start items-start lg:justify-center lg:items-center z-99">
           <li class="p-0 m-0 h-fit leading-4">
             <navLink text="Über uns" link="#ueber-uns" />
@@ -101,7 +105,7 @@ window.onscroll = function () {
       </div>
     </header>
 
-    <div class="hamburgerMenu fixed bg-white/90 flex-initial justify-center shadow-md backdrop-blur-sm lg:hidden z-70" :class="[ { hamburgerVisible: hamburger }]" >
+    <div class="hamburgerMenu fixed bg-dc-neutral50/90 flex-initial justify-center shadow-md backdrop-blur-sm lg:hidden z-70" :class="[ { hamburgerVisible: hamburger }]" >
  
         <ul class="flex flex-col    w-screen h-screen  gap-5 py-3 px-8 pt-32 justify-start items-center">
           <li class="p-0 m-0 h-fit leading-4 ">
@@ -138,7 +142,7 @@ window.onscroll = function () {
     </div>
 
     <div id="ueber-uns"
-      class="flex flex-col gap-4 lg:gap-32 -mt-12 pt-16 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 z-10 relative">
+      class="flex flex-col gap-4 lg:gap-32 -mt-12 pt-16 pb-24 w-full bg-dc-neutral50 border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 z-10 relative">
       <div class="px-8 lg:px-0 max-w-7xl m-auto flex flex-col gap-4 lg:gap-16">
         <p class="text-1xl lg:text-7xl">
           <span class="text-dc-400">Deep Content by heise</span> ist ein
@@ -156,7 +160,7 @@ window.onscroll = function () {
     </div>
 
     <div id="ki-beratung"
-      class="-mt-12 px-8 pt-16 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 relative overflow-hidden z-20">
+      class="-mt-12 px-8 pt-16 pb-24 w-full bg-dc-neutral50 border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 relative overflow-hidden z-20">
       <div class="max-w-7xl m-auto lg:grid lg:grid-cols-2 lg:gap-16">
         <div class="flex flex-col gap-8 lg:gap-16">
           <headlineH2 headline="KI-Beratung" />
@@ -170,7 +174,7 @@ window.onscroll = function () {
             Unternehmenskommunikation liefert die perfekte Grundlage für eine
             effektive Beratung. Sprechen Sie uns gern an.
           </p>
-          <btnPrimary text="Jetzt Beratungstermin vereinbaren" @click="visible = !visible" />
+          <btnPrimary text="Jetzt Beratungstermin vereinbaren" @click="visibleBeratung = !visibleBeratung" />
         </div>
       </div>
       <div id="circle" class="w-1/2 absolute right-0 -bottom-1/4 opacity-30">
@@ -182,7 +186,7 @@ window.onscroll = function () {
     </div>
 
     <div id="ki-workshops"
-      class="-mt-12 px-8 pt-16 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 overflow-hidden z-30 relative">
+      class="-mt-12 px-8 pt-16 pb-24 w-full bg-dc-neutral50 border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 overflow-hidden z-30 relative">
       <div class="max-w-7xl m-auto flex flex-col gap-8 ">
         <headlineH2 headline="KI-Workshops" />
 
@@ -206,7 +210,7 @@ window.onscroll = function () {
     </div>
 
     <div id="ki-software"
-      class="-mt-12 px-8 pt-16 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 overflow-hidden z-40 relative">
+      class="-mt-12 px-8 pt-16 pb-24 w-full bg-dc-neutral50 border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 overflow-hidden z-40 relative">
       <div class="max-w-7xl m-auto lg:grid lg:grid-cols-2 lg:gap-16">
         <div class="flex flex-col gap-8 lg:gap-16">
           <headlineH2 headline="KI-Software" />
@@ -230,7 +234,7 @@ window.onscroll = function () {
           </p>
           <div class="flex flex-col gap-3 lg:flex-row lg:gap-5">
             <btnPrimary text="Mehr über DC I/O" iconExternal class="w-full" />
-            <btnSecondary text="Jetzt Demo buchen" class="w-full" />
+            <btnSecondary text="Jetzt Demo buchen" class="w-full" @click="visibleDemo = !visibleDemo"  />
           </div>
         </div>
       </div>
@@ -244,7 +248,7 @@ window.onscroll = function () {
     </div>
 
     <div id="medienhaus"
-      class="flex flex-col gap-16 -mt-12 px-8 pt-8 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 z-50 relative">
+      class="flex flex-col gap-16 -mt-12 px-8 pt-8 pb-24 w-full bg-dc-neutral50 border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 z-50 relative">
       <article class="flex flex-col gap-8 max-w-7xl m-auto lg:*:w-1/2 lg:flex-row lg:gap-16">
         <img class="w-full h-full shadow-lg rounded-3xl lg:rounded-images" src="./assets/mixed-magazine.svg" alt="" />
         <div class="flex flex-col gap-8">
@@ -298,8 +302,230 @@ window.onscroll = function () {
 
     <Contact />
     <Footer />
-    <Modal v-if="visible" />
 
+    
+    <!-- <Modal v-show="visible"   /> -->
+
+    <div id="modal" v-show="visibleBeratung"
+      class="w-screen h-screen top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-99 fixed flex justify-center items-center">
+
+      <div
+        class="w-11/12 lg:max-w-md  p-8 bg-white border border-neutral-300 border-solid rounded-2xl shadow-top3xl z-99">
+
+        <form action="" class="flex flex-col gap-12 ">
+          <h2 class="text-3xl font-light lg:col-span-2">Jetzt Beratungstermin vereinbaren </h2>
+
+          <div class="flex flex-col gap-12">
+
+            <div class="flex flex-row gap-16 text-dc-neutral900">
+              <div class="flex justify-center items-center">
+                <input type="radio" id="beratungChoice1" name="beratung-remote" placeholder="Präsenz" value="Präsenz"
+                  class="w-6 h-6 mr-2 cursor-pointer  " required />
+                <label for="beratungChoice1" class="cursor-pointer">Remote</label>
+              </div>
+
+              <div class="flex justify-center items-center">
+                <input type="radio" id="beratungChoice2" name="beratung-praesenz" placeholder="Präsenz" value="Präsenz"
+                  class="w-6 h-6 mr-2 cursor-pointer" required />
+                <label for="beratungChoice2" class="cursor-pointer">Präsenz</label>
+              </div>
+            </div>
+
+
+            <div class="flex flex-row gap-4 justify-between">
+              <div class="">
+              <!-- <label for="fname" class="text-1xl font-light">Name*</label><br> -->
+              <input type="date" id="beratung-date" name="beratung-date" placeholder="TT/MM/JJJJ*"
+                class="w-full border-b border-solid border-dc-400 placeholder:text-dc-neutral900" required /><br />
+            </div>
+
+            <div class="">
+              <!-- <label for="fname" class="text-1xl font-light">Name*</label><br> -->
+              <input type="time" id="beratung-time" name="beratung-time" placeholder="TT/MM/JJJJ*"
+                class="w-full border-b border-solid border-dc-400 placeholder:text-dc-neutral900" required /><br />
+            </div>
+            </div>
+
+            <div class="">
+              <!-- <label for="fname" class="text-1xl font-light">Name*</label><br> -->
+              <input type="text" id="beratung-name" name="beratung-name" placeholder="Name*"
+                class="w-full border-b border-solid border-dc-400 placeholder:text-dc-neutral900" required /><br />
+            </div>
+
+            <div class="">
+              <!-- <label for="lcompany">Unternehmen</label><br> -->
+              <input type="text" id="beratung-company" name="beratung-company" placeholder="Unternehmen"
+                class="w-full border-b border-solid border-dc-400 placeholder:text-dc-neutral900" />
+            </div>
+            <div class="">
+              <!-- <label for="lmail">E-Mail*</label><br> -->
+              <input type="email" id="beratung-mail" name="beratung-mail" placeholder="E-Mail*"
+                class="w-full border-b border-solid border-dc-400 placeholder:text-dc-neutral900" required />
+            </div>
+          </div>
+
+
+          <input type="submit"
+            class="w-full  min-h-12 lg:min-h-16 lg:px-12 font-normal bg-gradient-to-b from-dc-400 to-dc-500 text-white text-base lg:text-lg rounded-3xl lg:rounded-full background btn primary transition-all	 relative top-0 hover:drop-shadow-xl  ease-in-out  hover:-translate-y-1 hover:saturate-150	duration-300 cursor-pointer  "
+            value="Senden" />
+        </form>
+
+      </div>
+
+      <div id="modalBackground" v-show="visibleBeratung" @click="visibleBeratung = !visibleBeratung"
+        class="cursor-pointer w-screen h-screen top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black z-70 fixed flex justify-center items-center bg-opacity-30">
+      </div>
+
+    </div><!-- end Modal visibleBeratung -->
+
+       <!-- <Modal v-show="visible"   /> -->
+
+       <div id="modal" v-show="visibleDemo"
+      class="w-screen h-screen top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-99 fixed flex justify-center items-center">
+
+      <div
+        class="w-11/12 lg:max-w-md  p-8 bg-white border border-neutral-300 border-solid rounded-2xl shadow-top3xl z-99">
+
+        <form action="" class="flex flex-col gap-12 ">
+          <h2 class="text-3xl font-light lg:col-span-2">Jetzt remote Demotermin vereinbaren</h2>
+
+          <div class="flex flex-col gap-12">
+
+            <!-- <div class="flex flex-row gap-16 text-dc-neutral900">
+              <div class="flex justify-center items-center">
+                <input type="radio" id="demoChoice1" name="remote" placeholder="Präsenz" value="Präsenz"
+                  class="w-6 h-6 mr-2 cursor-pointer  " required />
+                <label for="demoChoice1" class="cursor-pointer">Remote</label>
+              </div>
+
+              <div class="flex justify-center items-center">
+                <input type="radio" id="demoChoice2" name="remote" placeholder="Präsenz" value="Präsenz"
+                  class="w-6 h-6 mr-2 cursor-pointer" required />
+                <label for="demoChoice2" class="cursor-pointer">Präsenz</label>
+              </div>
+            </div> -->
+
+
+            <div class="flex flex-row gap-4 justify-between">
+              <div class="">
+              <!-- <label for="fname" class="text-1xl font-light">Name*</label><br> -->
+              <input type="date" id="demo-date" name="demo-date" placeholder="TT/MM/JJJJ*"
+                class="w-full border-b border-solid border-dc-400 placeholder:text-dc-neutral900" required /><br />
+            </div>
+
+            <div class="">
+              <!-- <label for="fname" class="text-1xl font-light">Name*</label><br> -->
+              <input type="time" id="demo-time" name="demo-time" placeholder="TT/MM/JJJJ*"
+                class="w-full border-b border-solid border-dc-400 placeholder:text-dc-neutral900" required /><br />
+            </div>
+            </div>
+
+            <div class="">
+              <!-- <label for="fname" class="text-1xl font-light">Name*</label><br> -->
+              <input type="text" id="demo-name" name="demo-name" placeholder="Name*"
+                class="w-full border-b border-solid border-dc-400 placeholder:text-dc-neutral900" required /><br />
+            </div>
+
+            <div class="">
+              <!-- <label for="lcompany">Unternehmen</label><br> -->
+              <input type="text" id="demo-company" name="demo-company" placeholder="Unternehmen"
+                class="w-full border-b border-solid border-dc-400 placeholder:text-dc-neutral900" />
+            </div>
+            <div class="">
+              <!-- <label for="lmail">E-Mail*</label><br> -->
+              <input type="email" id="demo-mail" name="demo-mail" placeholder="E-Mail*"
+                class="w-full border-b border-solid border-dc-400 placeholder:text-dc-neutral900" required />
+            </div>
+          </div>
+
+
+          <input type="submit"
+            class="w-full  min-h-12 lg:min-h-16 lg:px-12 font-normal bg-gradient-to-b from-dc-400 to-dc-500 text-white text-base lg:text-lg rounded-3xl lg:rounded-full background btn primary transition-all	 relative top-0 hover:drop-shadow-xl  ease-in-out  hover:-translate-y-1 hover:saturate-150	duration-300 cursor-pointer  "
+            value="Senden" />
+        </form>
+
+      </div>
+
+      <div id="modalBackground" v-show="visibleDemo" @click="visibleDemo = !visibleDemo"
+        class="cursor-pointer w-screen h-screen top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black z-70 fixed flex justify-center items-center bg-opacity-30">
+      </div>
+
+    </div><!-- end Modal visibleDemo -->
+
+
+       <!-- <Modal v-show="visible"   /> -->
+
+       <div id="modal" v-show="visibleWorkshop"
+      class="w-screen h-screen top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-99 fixed flex justify-center items-center">
+
+      <div
+        class="w-11/12 lg:max-w-md  p-8 bg-white border border-neutral-300 border-solid rounded-2xl shadow-top3xl z-99">
+
+        <form action="" class="flex flex-col gap-12 ">
+          <h2 class="text-3xl font-light lg:col-span-2">Jetzt Workshop buchen</h2>
+
+          <div class="flex flex-col gap-12">
+
+            <div class="flex flex-row gap-16 text-dc-neutral900">
+              <div class="flex justify-center items-center">
+                <input type="radio" id="workshopChoice1" name="workshopRemote" placeholder="Remote" value="Remote"
+                  class="w-6 h-6 mr-2 cursor-pointer  " required />
+                <label for="workshopChoice1" class="cursor-pointer">Remote</label>
+              </div>
+
+              <div class="flex justify-center items-center">
+                <input type="radio" id="workshopChoice2" name="workshopPraesenz" placeholder="Präsenz" value="Präsenz"
+                  class="w-6 h-6 mr-2 cursor-pointer" required />
+                <label for="workshopChoice2" class="cursor-pointer">Präsenz</label>
+              </div>
+            </div>
+
+
+            <div class="flex flex-row gap-4 justify-between">
+              <div class="">
+              <!-- <label for="fname" class="text-1xl font-light">Name*</label><br> -->
+              <input type="date" id="workshop-date" name="workshop-date" placeholder="TT/MM/JJJJ*"
+                class="w-full border-b border-solid border-dc-400 placeholder:text-dc-neutral900" required /><br />
+            </div>
+
+            <div class="">
+              <!-- <label for="fname" class="text-1xl font-light">Name*</label><br> -->
+              <input type="time" id="workshop-time" name="workshop-time" placeholder="TT/MM/JJJJ*"
+                class="w-full border-b border-solid border-dc-400 placeholder:text-dc-neutral900" required /><br />
+            </div>
+            </div>
+
+            <div class="">
+              <!-- <label for="fname" class="text-1xl font-light">Name*</label><br> -->
+              <input type="text" id="workshop-name" name="workshop-name" placeholder="Name*"
+                class="w-full border-b border-solid border-dc-400 placeholder:text-dc-neutral900" required /><br />
+            </div>
+
+            <div class="">
+              <!-- <label for="lcompany">Unternehmen</label><br> -->
+              <input type="text" id="workshop-company" name="workshop-company" placeholder="Unternehmen"
+                class="w-full border-b border-solid border-dc-400 placeholder:text-dc-neutral900" />
+            </div>
+            <div class="">
+              <!-- <label for="lmail">E-Mail*</label><br> -->
+              <input type="email" id="workshop-mail" name="workshop-mail" placeholder="E-Mail*"
+                class="w-full border-b border-solid border-dc-400 placeholder:text-dc-neutral900" required />
+            </div>
+          </div>
+
+
+          <input type="submit"
+            class="w-full  min-h-12 lg:min-h-16 lg:px-12 font-normal bg-gradient-to-b from-dc-400 to-dc-500 text-white text-base lg:text-lg rounded-3xl lg:rounded-full background btn primary transition-all	 relative top-0 hover:drop-shadow-xl  ease-in-out  hover:-translate-y-1 hover:saturate-150	duration-300 cursor-pointer  "
+            value="Senden" />
+        </form>
+
+      </div>
+
+      <div id="modalBackground" v-show="visibleWorkshop" @click="visibleWorkshop = !visibleWorkshop"
+        class="cursor-pointer w-screen h-screen top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black z-70 fixed flex justify-center items-center bg-opacity-30">
+      </div>
+
+    </div><!-- end Modal visibleWorkshop -->
 
   </div>
 </template>

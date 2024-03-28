@@ -11,6 +11,7 @@ export default {
         dc: {
           400: '#FF646F',
           500: '#F34B57',
+          neutral50: '#FCFCFD',
           neutral900: '#191D2E',
           neutral200: '#DFE2EC',
           blue: '#385CFA',
