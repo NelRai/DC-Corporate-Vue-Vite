@@ -63,7 +63,7 @@ window.onscroll = function () {
     <header id="navbar" class="fixed flex lg:grid px-4 lg:pt-3 lg:px-0 items-center lg:items-end w-full m-auto max-w-7xl left-1/2 z-99 navbar transition-all rounded-b-lg shadow-md backdrop-blur-sm bg-white/70 lg:bg-transparent lg:backdrop-blur-none lg:shadow-none"  :class="[ { navbarHidden: hamburger }]"    >
       <!--change to fixed if on scroll header hide is implemented  -->
       
-      <div class="flex-1 lg:absolute">
+      <div class="flex-1 lg:absolute lg:top-0">
         <div class="">
           <img src="./assets/dc-logo-black.png" alt=""
             class="h-auto lg:bg-white/80  py-4 lg:p-4 lg:rounded-b-lg lg:shadow-md lg:backdrop-blur-sm" />
@@ -138,7 +138,7 @@ window.onscroll = function () {
     </div>
 
     <div id="ueber-uns"
-      class="flex flex-col gap-4 -mt-12 pt-16 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 z-10 relative">
+      class="flex flex-col gap-4 lg:gap-32 -mt-12 pt-16 pb-24 w-full bg-white border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 z-10 relative">
       <div class="px-8 lg:px-0 max-w-7xl m-auto flex flex-col gap-4 lg:gap-16">
         <p class="text-1xl lg:text-7xl">
           <span class="text-dc-400">Deep Content by heise</span> ist ein

@@ -259,7 +259,7 @@ button:focus-visible {
 
 }
 .navbar--hidden {
-    transform: translateX(-50%) translateY(-120%);
+    transform: translateX(-50%) translateY(-140%);
     transition: transform 300ms ease-in-out;
 }
 
