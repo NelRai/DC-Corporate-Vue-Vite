@@ -1,5 +1,8 @@
 <script setup>
 import { ref } from "vue";
+import IconTwitter from "../components/icon-twitter.vue";
+import IconLinkedIn from "../components/icon-linkedIn.vue";
+
 
 defineProps({
   text: String,
@@ -26,19 +29,21 @@ const count = ref(0);
     </div>
 
     <div
-      class="flex flex-col lg:flex-row-reverse gap-8 lg:pt-8 lg:justify-between lg:border-t lg:border-t-neutral-500"
+      class="flex flex-col lg:flex-row-reverse gap-8 lg:pt-8 lg:justify-between lg:border-t lg:w-full lg:items-end max-w-7xl lg:m-auto lg:border-t-neutral-500"
     >
-      <div class="flex flex-row">
-        <img src="" alt="" />
-        <img src="" alt="" />
+      <div class="flex flex-row justify-center gap-4">
+        <a href="" class="bg-dc-400 rounded-full p-5 h-16 w-16 lg:h-10 lg:w-10 lg:p-3 ease-in-out  hover:-translate-y-1 hover:saturate-150	duration-300" ><IconTwitter /></a>
+        <a href="" class="bg-dc-400 rounded-full p-5 h-16 w-16 lg:h-10 lg:w-10 lg:p-3 ease-in-out  hover:-translate-y-1 hover:saturate-150	duration-300" ><IconLinkedIn /></a>
       </div>
 
       <div
-        class="text-xl flex flex-col lg:flex-row gap-8 lg:w-full max-w-7xl lg:m-auto"
+        class="text-xl flex flex-col lg:flex-row gap-8 "
       >
         <a href="" class="text-white font-light">Impressum</a>
         <a href="" class="text-white font-light">Datenschutz</a>
       </div>
     </div>
   </footer>
+
+  
 </template>
