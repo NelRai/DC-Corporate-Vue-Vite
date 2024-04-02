@@ -19,9 +19,9 @@ const count = ref(0);
       class="flex flex-col lg:flex-row gap-y-8 lg:justify-between lg:items-center lg:w-full max-w-7xl lg:m-auto"
     >
       <img
-        src="../assets/logo-test.png"
+        src="../assets/Logo_DEEP-CONTENT-Heise_micro_light.svg"
         alt=""
-        class="mx-8 lg:mx-0 lg:min-w-80"
+        class="mx-8 w-56 lg:w-80 lg:mx-0 lg:min-w-80"
       />
       <a href="mailto:" class="text-3xl lg:text-5xl text-white font-light"
         >hallo@deep-content.io</a

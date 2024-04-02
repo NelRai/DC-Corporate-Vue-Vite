@@ -69,8 +69,8 @@ window.onscroll = function () {
       
       <div class="flex-1 lg:absolute lg:top-0">
         <div class="">
-          <img src="./assets/dc-logo-black.png" alt=""
-            class="h-auto lg:bg-dc-neutral50/80  py-4 lg:p-4 lg:rounded-b-lg lg:shadow-md lg:backdrop-blur-sm" />
+          <img src="./assets/Logo_DEEP-CONTENT-Heise_micro.svg" alt=""
+            class="h-auto w-44 lg:w-52 lg:bg-dc-neutral50/80  py-4 lg:p-4 lg:rounded-b-lg lg:shadow-md lg:backdrop-blur-sm" />
         </div>
       </div>
       <!-- Hamburger -->
@@ -80,8 +80,6 @@ window.onscroll = function () {
         </div>
       </div>
 
-
-     
 
       <nav class="hidden justify-self-center lg:flex bg-dc-neutral50/80 rounded-full flex-initial justify-center shadow-md backdrop-blur-sm  lg:visible">
         <ul class="flex flex-col lg:h-auto lg:flex-row gap-5 py-3 px-8 justify-start items-start lg:justify-center lg:items-center z-99">
