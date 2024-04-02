@@ -39,7 +39,7 @@ const count = ref(0);
       <div
         class="text-xl flex flex-col lg:flex-row gap-8 "
       >
-        <a href="" class="text-white font-light">Impressum</a>
+        <a href="/impressum.html" class="text-white font-light">Impressum</a>
         <a href="" class="text-white font-light">Datenschutz</a>
       </div>
     </div>

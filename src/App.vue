@@ -22,9 +22,9 @@ import Footer from "./components/footer.vue";
 import Modal from "./components/modal.vue";
 
 // GSAP
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// gsap.registerPlugin(ScrollTrigger);
 
 
 //modal const
@@ -48,7 +48,9 @@ const hamburger = ref(false)
 
 
 // Navbar Animation on Scroll
-var prevScrollpos = window.scrollY;
+
+if (typeof window !== "undefined") {
+  var prevScrollpos = window.scrollY;
 window.onscroll = function () {
   var currentScrollPos = window.scrollY;
   if (prevScrollpos > currentScrollPos) {
@@ -60,6 +62,9 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 }
+
+}
+
 
 </script>
 
@@ -418,7 +423,7 @@ window.onscroll = function () {
             <div class="flex flex-row gap-16 text-dc-neutral900">
               <div class="flex justify-center items-center">
                 <input type="radio" id="workshopChoice1" name="workshopRemote" placeholder="Remote" value="Remote"
-                  class="w-6 h-6 mr-2 cursor-pointer  " required />
+                  class="w-6 h-6 mr-2 cursor-pointer" required />
                 <label for="workshopChoice1" class="cursor-pointer">Remote</label>
               </div>
 
