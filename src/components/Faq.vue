@@ -19,7 +19,7 @@ const visibleWorkshop = ref(false)
             <span class="workshop-label text-xs border lg:text-sm lg:font-normal border-red-400 text-red-400 rounded-md px-2 py-0.5 transition-all">Workshop 0{{ faq.id }}</span>
 <div class="flex flex-row gap-x-4 justify-between items-center mt-2">
             <div class="question">
-                <h3 class="text-lg lg:text-2xl transition-all" v-html="faq.question"></h3>
+                <h4 class="text-lg lg:text-2xl transition-all" v-html="faq.question"></h4>
             </div>
             <div :class="['plus-sphere h-6 w-6 min-w-6 lg:h-10 lg:w-10 lg:min-w-10 flex justify-center items-center bg-red-400 rounded-full', { open: faq.isOpen }]">
                 <!-- + -->

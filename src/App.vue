@@ -79,12 +79,12 @@ window.onscroll = function () {
 
     <div class="flex flex-col gap-8 pt-32 pb-28 lg:pt-44 lg:pb-28 lg:gap-32 ">
       <div class="flex flex-col gap-2 lg:gap-8 text-center lg:text-left w-full max-w-7xl m-auto">
-        <h1 class="font-blinker font-light text-3xl lg:text-[7rem] lg:leading-[7rem]">
+        <h2 class="font-blinker font-light text-3xl lg:text-[7rem] lg:leading-[7rem]">
           Neues Denken.<br />Neue Kompetenzen.
-        </h1>
-        <p class="text-base lg:text-3xl font-blinker">
+        </h2>
+        <h3 class="text-base lg:text-3xl font-blinker">
           Medienhaus & KI-zentrierte Agentur
-        </p>
+        </h3>
       </div>
       <div class="flex flex-wrap justify-center gap-3 mx-10 lg:mx-0">
         <btnPrimary text="KI-Beratung" link="#ki-beratung" />
@@ -98,10 +98,10 @@ window.onscroll = function () {
     <div id="ueber-uns"
       class="flex flex-col gap-4 lg:gap-32 -mt-12 pt-16 pb-24 w-full bg-dc-neutral50 border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 z-10 relative">
       <div class="px-8 lg:px-0 max-w-7xl m-auto flex flex-col gap-4 lg:gap-16">
-        <p class="text-1xl lg:text-7xl">
+        <h1 class="text-1xl lg:text-7xl">
           <span class="text-dc-400">Deep Content by heise</span> ist ein
           digitales Medienhaus mit jahrelanger journalistischer Tech-Expertise.
-        </p>
+        </h1>
         <p class="lg:text-4xl">
           Journalist:innen und Kommunikationsprofis arbeiten hier erfolgreich mit
           generativer KI. Unsere Agentur-Leistungen umfassen etwa Beratung zu KI
@@ -202,7 +202,7 @@ window.onscroll = function () {
     </div>
 
     <div id="medienhaus"
-      class="flex flex-col gap-16 -mt-12 px-8 pt-8 pb-24 w-full bg-dc-neutral50 border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 z-50 relative">
+      class="flex flex-col gap-16 lg:gap-32 -mt-12 px-8 pt-8 pb-24 w-full bg-dc-neutral50 border border-neutral-300 border-solid rounded-t-3xl lg:rounded-t-4xl shadow-top3xl lg:pt-32 lg:pb-44 z-50 relative">
       <article class="flex flex-col gap-8 max-w-7xl m-auto lg:*:w-1/2 lg:flex-row lg:gap-16">
         <img class="w-full h-full shadow-lg rounded-3xl lg:rounded-images" src="./assets/mixed-magazine.svg" alt="" />
         <div class="flex flex-col gap-8">
